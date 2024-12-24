@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Attendance_backend": {
+      "main": "src/Attendance_backend/main.mo",
+      "type": "motoko"
+    },
+    "Attendance_frontend": {
+      "dependencies": [
+        "Attendance_backend"
+      ],
+      "source": [
+        "src/Attendance_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Attendance_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
